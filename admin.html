@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Side</title>
+
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is Hotel Management Website made by Piyush">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css"> 
+
+    <link rel="preload" as="image" href="images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="images/hero-slider-3.jpg">
+
+</head>
+<body>
+    
+    <section class="reservation">
+        <div class="container">
+
+            <div class="form reservation-form bg-black-10">
+
+                <form action="" onsubmit="return validateLogin(event)" class="form-left">
+
+                    <h2 class="headline-1 text-center">Admin Login</h2>
+
+                    <p class="form-text text-center">
+                        We request the admin to fill out the information
+                    </p>
+                    
+                    <div class="input-wrapper">
+                        <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" class="input-field">
+
+                        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" class="input-field">
+                    </div>
+
+                    <!--<div class="input-wrapper">
+
+                        <div class="icon-wrapper">
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                            <select name="peron" class="input-field">
+                                <option value="1-person">1 Person</option>
+                                <option value="2-person">2 Person</option>
+                                <option value="3-person">3 Person</option>
+                                <option value="4-person">4 Person</option>
+                                <option value="5-person">5 Person</option>
+                                <option value="6-person">6 Person</option>
+                                <option value="7-person">7 Person</option>
+                            </select>
+
+                            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div class="icon-wrapper">
+                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                            <input type="date" name="reservation-date" class="input-field">
+
+                            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div class="icon-wrapper">
+                            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                            <select name="peron" class="input-field">
+                                <option value="08:00am">08 : 00 am</option>
+                                <option value="09:00am">09 : 00 am</option>
+                                <option value="010:00am">10 : 00 am</option>
+                                <option value="011:00am">11 : 00 am</option>
+                                <option value="012:00pm">12 : 00 pm</option>
+                                <option value="01:00pm">01 : 00 pm</option>
+                                <option value="02:00pm">02 : 00 pm</option>
+                                <option value="03:00pm">03 : 00 pm</option>
+                                <option value="04:00pm">04 : 00 pm</option>
+                                <option value="05:00pm">05 : 00 pm</option>
+                                <option value="06:00pm">06 : 00 pm</option>
+                                <option value="07:00pm">07 : 00 pm</option>
+                                <option value="08:00pm">08 : 00 pm</option>
+                                <option value="09:00pm">09 : 00 pm</option>
+                                <option value="10:00pm">10 : 00 pm</option>
+                            </select>
+
+                            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                        </div>
+
+                    </div>-->
+
+                    <textarea name="secretCode" id="secretCode" placeholder="Today's Secret Code" autocomplete="off" class="input-field"></textarea>
+
+                    <p id="error-message" style="color: red; display: none;">No information matched!</p>
+
+                        <button type="submit" class="btn btn-secondary">
+                        <span class="text text-1">Login</span>
+
+                        <span class="text text-2" aria-hidden="true">Login</span>
+                        </button>
+
+                </form>
+
+                <div class="form-right text-center" style="background-image: url(images/form-pattern.png)">
+
+                    <h2 class="headline-1 text-center">Contact Us</h2>
+
+                    <p class="contact-label">Request Owner</p>
+
+                    <a href="tel:+917498108751" class="body-1 contact-number hover-underline">
+                        +91 7498108751
+                    </a>
+
+                    <div class="separator"></div>
+
+                    <p class="contact-label">Location</p>
+
+                    <address class="body-4">
+                        Restruant St, Delicious City, <br>
+                        Pune 411046, India
+                    </address>
+
+                     <p class="contact-label">Lunch Time</p>
+
+                    <p class="body-4">
+                        Monday to Sunday <br>
+                        11:00 am - 2:30 pm
+                    </p>
+
+                    <p class="contact-label">Dinner Time</p>
+
+                    <p class="body-4">
+                        Monday to Sunday <br>
+                        5:00 pm - 10:00 pm
+                    </p>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
